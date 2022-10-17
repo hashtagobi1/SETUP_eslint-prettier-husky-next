@@ -16,12 +16,16 @@
     "format": "prettier --write .",
     "test-all": "yarn check-format && yarn check-lint && yarn check-types && yarn build",
     "prepare": "husky install",
-    "main-push": "git push origin main"
+    "main-push": "git push origin main",
+    "watchTailwind": "npx tailwindcss -i ./styles/globals.css -o ./dist/output.css --watch"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.12",
     "next": "12.1.0",
+    "postcss": "^8.4.18",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
     "@types/node": "17.0.22",
